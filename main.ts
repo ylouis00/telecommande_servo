@@ -9,6 +9,10 @@ basic.forever(function () {
         radio.sendNumber(3)
     } else if (input.logoIsPressed()) {
         radio.sendNumber(4)
+    } else if (input.isGesture(Gesture.TiltLeft)) {
+        radio.sendNumber(5)
+    } else if (input.isGesture(Gesture.TiltRight)) {
+        radio.sendNumber(6)
     } else {
         radio.sendNumber(0)
     }
